@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Интернет-магазин Мишка" width="86" height="35">
       </a>
       <nav class="main-nav">
@@ -33,71 +33,68 @@
     </header>
 
     <main class="page-main">
-      <header class="page-main__header page-main__header--index">
-        <h1 class="page-main__title">Милые штуки ручной
-            работы для дома</h1>
+      <header class="page-main__header">
+        <h1 class="page-main__title">Каталог товаров</h1>
       </header>
-      <section class="products">
-        <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="products__list">
-          <li class="products__item">
-            <a href="interrior.html" class="products__link products__link--interrior">Предметы интерьера</a>
+
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="item-card catalog__item">
+            <a href="item.html">
+              <img class="item-card__picture" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </a>
+
+            <p class="item-card__title">
+              <a href="item.html" class="item-card__link">Зайчик-попрыгайчик</a>
+            </p>
+
+            <p class="item-card__stats">Рост 30 см, вес 200 г</p>
+
+            <p class="item-card__price">1 200 руб.</p>
+
+            <button class="item-card__add-button" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
           </li>
-          <li class="products__item">
-            <a href="toys.html" class="products__link products__link--toys">Детские
-                игрушки</a>
+
+          <li class="item-card catalog__item">
+            <a href="item.html">
+              <img class="item-card__picture" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+            </a>
+
+            <p class="item-card__title">
+              <a href="item.html" class="item-card__link">Корзинка для белья</a>
+            </p>
+
+            <p class="item-card__stats">Диаметр 15 см, высота 10 см</p>
+
+            <p class="item-card__price">690 руб.</p>
+
+            <button class="item-card__add-button" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
           </li>
-        </ul>
-      </section>
 
-      <section class="week-good">
-        <header class="week-good__header">
-          <h2 class="section-title">Вязаные корзинки</h2>
-          <p class="week-good__label">Товар недели</p>
-        </header>
+          <li class="item-card catalog__item">
+            <a href="item.html">
+              <img class="item-card__picture" src="http://placehold.it/260x195" alt="Большая корзинка
+              для игрушек" width="260" height="195">
+            </a>
 
-        <p class="week-good__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="item-card__title">
+              <a href="item.html" class="item-card__link">Большая корзинка
+                для игрушек</a>
+            </p>
 
-        <table class="week-good__table">
-          <caption class="visually-hidden">Параметры товара</caption>
-          <tr class="visually-hidden">
-            <th>Параметр</th>
-            <th>Значение параметра</th>
-          </tr>
-          <tr class="week-good__table-row">
-            <td class="week-good__table-cell">Цвет:</td>
-            <td class="week-good__table-cell">«Тиффани»/серый</td>
-          </tr>
-          <tr class="week-good__table-row">
-            <td class="week-good__table-cell">Диаметр:</td>
-            <td class="week-good__table-cell">25 см</td>
-          </tr>
-          <tr class="week-good__table-row">
-            <td class="week-good__table-cell">Высота</td>
-            <td class="week-good__table-cell">15 см</td>
-          </tr>
-        </table>
+            <p class="item-card__stats">Диаметр 30 см, высота 30 см</p>
 
-        <img class="week-good__picture" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
-        <p class="week-good__price">Цена: 990 руб.</p>
+            <p class="item-card__price">1 500 руб.</p>
 
-        <a href="order.html" class="button week-good__button">Заказать</a>
-      </section>
+            <button class="item-card__add-button" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
 
-      <section class="about-us">
-        <h2 class="section-title">Коротко о нас:</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item about-us__item--ecological">Экологически
-              чистые материалы</li>
-          <li class="about-us__item about-us__item--scandinavian-style">Скандинавский стиль
-              по российской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает лайки
-              на фотографиях</li>
-          <li class="about-us__item about-us__item--handmade">Связано вручную с
-              любовью и умилением</li>
-          <li class="about-us__item about-us__item--homeland-manufacture">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--gift-packed">Поставляется в
-              подарочной упаковке</li>
         </ul>
       </section>
     </main>
@@ -138,5 +135,6 @@
         </form>
       </div>
     </div>
+
   </body>
 </html>
