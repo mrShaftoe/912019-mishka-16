@@ -1,0 +1,12 @@
+.button {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  color: $paragraph-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid $paragraph-color;
+}
