@@ -1,7 +1,6 @@
 @mixin nav-menu-link($font-size) {
   font-size: $font-size;
   font-weight: 700;
-  line-height: 1.41;
   color: $default-text-color;
   text-decoration: none;
   padding-left: 45px;

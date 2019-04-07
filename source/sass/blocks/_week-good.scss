@@ -7,7 +7,7 @@
 .week-good__label {
   font-size: 17px;
   font-weight: 700;
-  line-height: 1.18;
+  line-height: 20px;
   color: $marker-color;
   text-transform: uppercase;
 }
@@ -18,7 +18,7 @@
 }
 
 .week-good__table {
-  line-height: 1.33;
+  line-height: 20px;
   color: $paragraph-color;
   width: 100%;
 }
@@ -30,7 +30,6 @@
 .week-good__price {
   font-size: 17px;
   font-weight: 700;
-  line-height: 1.41;
   text-align: center;
   color: $paragraph-color;
 }
