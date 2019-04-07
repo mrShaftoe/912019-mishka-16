@@ -1,0 +1,20 @@
+.products__list {
+  @include list-reset;
+}
+
+.products__link {
+  display: block;
+  padding: 0 30px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+
+  &--interrior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}

@@ -1,0 +1,39 @@
+.item-card {
+  border: solid 1px $border-color;
+}
+
+.item-card__title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.item-card__picture-link {
+  display: block;
+}
+
+.item-card__picture {
+  vertical-align: bottom;
+}
+
+.item-card__content {
+  padding: 0 25px;
+}
+
+.item-card__price-cart {
+  @include block-border-shadow;
+}
+
+.item-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item-card__stats {
+  font-size: 13px;
+  line-height: 30px;
+  color: $paragraph-color;
+}
+
+.item-card__price {
+  font-weight: 700;
+}

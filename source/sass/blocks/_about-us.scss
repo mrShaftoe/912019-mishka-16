@@ -1,0 +1,13 @@
+.about-us {
+  padding: 35px 30px;
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}

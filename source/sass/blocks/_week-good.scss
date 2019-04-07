@@ -1,0 +1,35 @@
+.week-good {
+  padding: 35px 30px;
+  border-bottom: 6px solid transparent;
+  border-image: url("../img/bg-zigzag-line.svg") 100 round round;
+}
+
+.week-good__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $marker-color;
+  text-transform: uppercase;
+}
+
+.week-good__description {
+  color: $paragraph-color;
+  margin: 30px 0;
+}
+
+.week-good__table {
+  line-height: 20px;
+  color: $paragraph-color;
+  width: 100%;
+}
+
+.week-good__table-row {
+  box-shadow: 0 1px 0 0 $border-color;
+}
+
+.week-good__price {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: $paragraph-color;
+}
