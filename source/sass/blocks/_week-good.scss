@@ -1,7 +1,6 @@
 .week-good {
   padding: 35px 30px;
-  border-bottom: 6px solid transparent;
-  border-image: url("../img/bg-zigzag-line.svg") 100 round round;
+  @include zigzag-border;
 }
 
 .week-good__label {

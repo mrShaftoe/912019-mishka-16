@@ -1,0 +1,8 @@
+.reviews {
+  padding: 30px 30px 45px;
+  @include zigzag-border;
+}
+
+.reviews__list {
+  @include list-reset;
+}
