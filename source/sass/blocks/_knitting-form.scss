@@ -1,0 +1,58 @@
+.knitting-form {
+  padding: 30px 30px 55px;
+}
+
+.knitting-form__text {
+  font-size: 13px;
+  color: $paragraph-color;
+  margin: 0;
+
+  &--note {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.knitting-form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.knitting-form__legend {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $marker-color;
+  text-transform: uppercase;
+}
+
+.knitting-form__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.knitting-form__input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+}
+
+.knitting-form__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: transparentize($paragraph-color, 0.3);
+}
+
+.knitting-form__textarea {
+  border: 2px solid #000000;
+  width: 100%;
+  resize: none;
+}
+
+.knitting-form__textarea::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: transparentize($paragraph-color, 0.3);
+}

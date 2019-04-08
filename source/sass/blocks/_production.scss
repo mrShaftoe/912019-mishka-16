@@ -1,0 +1,22 @@
+.production {
+  padding: 0 30px;
+}
+
+.production__card {
+  border: solid 1px $border-color;
+}
+
+.production__content {
+  padding: 30px 34px;
+}
+
+.production__title {
+  font-size: 17px;
+  margin: 0;
+}
+
+.production__text {
+  font-size: 13px;
+  color: $paragraph-color;
+  margin: 0;
+}
