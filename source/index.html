@@ -2,38 +2,50 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
   </head>
   <body>
-    <div class="container">
-      <header class="page-header ">
-        <a class="page-header__logo">
+
+    <header class="page-header container">
+      <div class="page-header__logo">
+        <a>
           <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Интернет-магазин Мишка" width="86" height="35">
         </a>
-        <nav class="main-nav">
-          <button type="button" class="main-nav__toggle">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list site-menu">
-            <li class="site-menu__item">
-              <a href="catalog.html" class="site-menu__link">Каталог товаров</a>
-            </li>
-            <li class="site-menu__item">
-              <a href="form.html" class="site-menu__link">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-menu">
-            <li class="user-menu__item">
-              <a href="search.html" class="user-menu__link user-menu__link--search">Поиск по сайту</a>
-            </li>
-            <li class="user-menu__item">
-              <a href="cart.html" class="user-menu__link user-menu__link--cart">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
+      </div>
+      <nav class="page-header__main-nav site-menu">
+        <button type="button" class="site-menu__toggle page-header__menu-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="site-menu__list">
+          <li class="site-menu__item">
+            <a href="catalog.html" class="site-menu__link">Каталог товаров</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="form.html" class="site-menu__link">Вязание на заказ</a>
+          </li>
+          <li class="site-menu__item site-menu__item--secondary">
+            <a href="" class="site-menu__link">Новые поступления</a>
+          </li>
+          <li class="site-menu__item site-menu__item--secondary">
+            <a href="" class="site-menu__link">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__user-nav site-menu">
+          <ul class="site-menu__list">
+              <li class="site-menu__item">
+                <a href="search.html" class="site-menu__link site-menu__link--search">Поиск по сайту</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="cart.html" class="site-menu__link site-menu__link--cart">Корзина: пока пуста</a>
+              </li>
+            </ul>
+      </div>
+    </header>
+<!--
       <main class="page-main ">
         <header class="page-main__header page-main__header--index ">
           <h1 class="page-main__title">Милые штуки ручной
@@ -193,7 +205,7 @@
             <button class="button modal-order__submit" type="submit">Добавить</button>
           </form>
         </section>
-      </div>
-    </div>
+      </div> -->
+
   </body>
 </html>

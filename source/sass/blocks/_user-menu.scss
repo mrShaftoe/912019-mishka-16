@@ -1,12 +1,3 @@
 .user-menu {
-  @include list-reset;
-}
-
-.user-menu__item {
-  @include block-border-shadow;
-  padding: 0 30px;
-}
-
-.user-menu__link {
-  @include nav-menu-link(17px);
+  content: "";
 }

@@ -1,5 +1,5 @@
 .page-main__header {
-  @include block-border-shadow;
+  @include block-shadow-top;
   background-color: $page-second-bg-color;
   padding: 0 30px;
 

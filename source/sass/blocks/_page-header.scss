@@ -1,4 +1,33 @@
 .page-header {
-  @include block-border-shadow;
+  @include block-shadow-top;
   padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-header__main-nav {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    margin: 0 auto;
+    align-self: flex-start;
+  }
+
+  .page-header__main-nav {
+    order: -1;
+  }
 }

@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  min-width: $mobile-width;
   font-family: $font;
   font-size: $default-font-size;
   line-height: $default-line-height;
