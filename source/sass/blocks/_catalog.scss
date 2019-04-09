@@ -1,4 +1,17 @@
+.catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .catalog__list {
   @include list-reset;
-  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    margin-right: -51px;
+  }
 }

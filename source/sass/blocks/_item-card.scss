@@ -1,5 +1,9 @@
 .item-card {
   border: solid 1px $border-color;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .item-card__title {
@@ -17,10 +21,16 @@
 
 .item-card__content {
   padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item-card__price-cart {
   @include block-shadow-top;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item-card__link {
@@ -36,4 +46,26 @@
 
 .item-card__price {
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .item-card {
+    flex-direction: row;
+    width: 668px;
+  }
+  .item-card__picture-link {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-card {
+    width: 316px;
+    flex-direction: column;
+    margin-right: 51px;
+  }
+
+  .item-card__picture-link {
+    width: 100%;
+  }
 }
