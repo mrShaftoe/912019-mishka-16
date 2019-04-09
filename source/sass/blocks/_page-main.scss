@@ -6,6 +6,7 @@
   &--index {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: top center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -13,7 +14,17 @@
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-  padding: 0 8px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 244px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    margin-top: -24px;
+  }
+
+  .page-main__title {
+    width: 494px;
+  }
 }

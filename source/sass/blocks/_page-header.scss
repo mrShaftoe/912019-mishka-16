@@ -19,15 +19,19 @@
   .page-header__main-nav {
     order: 2;
   }
+
+  .page-header__user-nav {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    margin: 0 auto;
     align-self: flex-start;
   }
 
   .page-header__main-nav {
     order: -1;
+    font-size: 17px;
   }
 }
