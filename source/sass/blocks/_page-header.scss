@@ -4,16 +4,35 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.page-header__delivery {
+  display: none;
+  margin: 0;
 }
 
 .page-header__logo {
   align-self: center;
 }
 
+.page-header__logo-image {
+  vertical-align: bottom;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: 130px;
+  }
+
+  .page-header__delivery {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    z-index: 1;
   }
 
   .page-header__main-nav {

@@ -1,6 +1,13 @@
 .week-good {
   @include zigzag-border;
-  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.week-good__header {
+  width: 260px;
 }
 
 .week-good__label {
@@ -12,6 +19,10 @@
 }
 
 .week-good__description {
+  width: 260px;
+}
+
+.week-good__text {
   color: $paragraph-color;
   margin: 30px 0;
 }
@@ -26,9 +37,60 @@
   box-shadow: 0 1px 0 0 $border-color;
 }
 
+.week-good__buy {
+  width: 260px;
+}
+
 .week-good__price {
   font-size: 17px;
   font-weight: 700;
   text-align: center;
   color: $paragraph-color;
+}
+
+@media (min-width: $tablet-width) {
+  .week-good {
+    align-items: flex-start;
+  }
+
+  .week-good__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .week-good__description {
+    width: 292px;
+  }
+
+  .week-good__buy {
+    width: 292px;
+  }
+
+  .week-good__picture {
+    position: absolute;
+    right: 50px;;
+    z-index: -1;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .week-good__header {
+    justify-content: flex-start;
+  }
+
+  .week-good__label {
+    order: -1;
+    width: 175px;
+  }
+
+  .week-good__description {
+    margin-left: 175px;
+  }
+
+  .week-good__buy {
+    margin-left: 175px;
+  }
 }
