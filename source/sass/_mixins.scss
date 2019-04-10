@@ -3,10 +3,9 @@
   font-weight: 700;
   color: $default-text-color;
   text-decoration: none;
-  padding-left: 45px;
 }
 
-@mixin block-border-shadow {
+@mixin block-shadow-top {
   box-shadow: inset 0 1px 0 0 $border-color;
 }
 
@@ -19,4 +18,8 @@
 @mixin zigzag-border {
   border-bottom: 6px solid transparent;
   border-image: url("../img/bg-zigzag-line.svg") 100 round round;
+}
+
+@mixin block-outline($color: green) {
+  outline: 1px dotted $color;
 }

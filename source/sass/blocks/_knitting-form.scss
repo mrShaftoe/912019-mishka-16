@@ -52,6 +52,7 @@
 }
 
 .knitting-form__textarea::placeholder {
+  font-family: $font;
   font-size: 17px;
   line-height: 18px;
   color: transparentize($paragraph-color, 0.3);
