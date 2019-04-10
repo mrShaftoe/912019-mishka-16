@@ -8,10 +8,18 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    width: 668px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__list {
     margin-right: -51px;
+    width: 1050px;
   }
 }

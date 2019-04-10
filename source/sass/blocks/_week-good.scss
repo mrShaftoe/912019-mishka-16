@@ -71,12 +71,12 @@
 
   .week-good__picture {
     position: absolute;
-    right: 50px;;
+    right: 50px;
     z-index: -1;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .week-good__header {
     justify-content: flex-start;
   }
