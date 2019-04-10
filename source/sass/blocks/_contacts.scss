@@ -18,6 +18,9 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  font-size: 15px;
+  line-height: 30px;
+  color: $paragraph-color;
 }
 
 .contacts__item {
@@ -89,7 +92,7 @@
   .contacts__map {
     position: absolute;
     top: 0;
-    right: 50px;
+    left: 50%;
     background-image: url("../img/map-desktop@1x.jpg");
     z-index: 5;
     width: 525px;
