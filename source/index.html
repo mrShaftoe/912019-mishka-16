@@ -119,8 +119,10 @@
         </ul>
       </section>
 
-      <section class="reviews">
-        <h2 class="section-title">Отзывы</h2>
+      <section class="reviews container">
+        <header class="reviews__title">
+          <h2 class="section-title">Отзывы</h2>
+        </header>
         <ul class="reviews__list">
           <li class="review reviews__item">
             <p class="review__text">
@@ -134,41 +136,34 @@
           </li>
         </ul>
         <div class="reviews__pagination">
-          <button class="reviews__button reviews__button--prev"><span class="visually-hidden">Вперёд</span></button>
-          <button class="reviews__button reviews__button--next"><span class="visually-hidden">Назад</span></button>
+          <button class="reviews__pagination-button reviews__pagination-button--prev"><span class="visually-hidden">Вперёд</span></button>
+          <button class="reviews__pagination-button reviews__pagination-button--next"><span class="visually-hidden">Назад</span></button>
         </div>
         <a href="write-review.html" class="button reviews__button">Написать</a>
       </section>
 
       <section class="contacts">
-        <div class="contacts__content">
-          <h2 class="section-title section-title--small contacts__title">Контакты</h2>
-          <table class="contacts__table">
-            <caption class="visually-hidden">Наши контакты</caption>
-            <tr class="visually-hidden">
-              <th>Параметр</th>
-              <th>Значение</th>
-            </tr>
-            <tr class="contacts__table-row">
-              <col width="30%">
-              <col width="70%">
-              <td class="contacts__table-cell">e-mail:</td>
-              <td class="contacts__table-cell">
-                <a href="mailto:info@mimimishkashop.ru" class="contacts__email">info@mimimishkashop.ru</a>
-              </td>
-            </tr>
-            <tr class="contacts__table-row">
-              <td class="contacts__table-cell">адрес:</td>
-              <td class="contacts__table-cell">г. Санкт-Петербург,
-                  ул.&nbsp;Большая Конюшенная,
-                  д.&nbsp;19/8,&nbsp;офис 101</td>
-            </tr>
-          </table>
+        <div class="contacts__content container">
+          <header class="contacts__header">
+            <h2 class="section-title section-title--small contacts__title">Контакты</h2>
+          </header>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__key">e-mail:</p>
+              <p class="contacts__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__key">адрес:</p>
+              <p class="contacts__value">г. Санкт-Петербург,<br>
+                  ул.Большая Конюшенная,<br>
+                  д.&nbsp;19/8,&nbsp;офис 101</p>
+            </li>
+          </ul>
         </div>
         <div class="contacts__map">
-          <img src="http://placehold.it/320x457" alt="Карта" class="contacts__map-image" width="320" height="457">
+
         </div>
-        <div class="contacts__content">
+        <div class="contacts__content container">
           <a href="write-us.html" class="button contacts__button">Напишите нам</a>
         </div>
       </section>

@@ -1,8 +1,40 @@
 .reviews {
   @include zigzag-border;
   padding: 30px 30px 45px;
+  position: relative;
 }
 
 .reviews__list {
   @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 30px 50px 45px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+
+  .reviews__pagination {
+    position: absolute;
+    bottom: 45px;
+    right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__list {
+    margin-left: 175px;
+  }
+
+  .reviews__title {
+    margin-left: 175px;
+  }
 }
