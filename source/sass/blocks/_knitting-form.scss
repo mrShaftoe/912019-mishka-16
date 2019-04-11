@@ -121,7 +121,12 @@
       width: 30%;
     }
   }
-  .knitting-form__header,
+
+  .knitting-form__header {
+    width: 700px;
+    margin-left: 175px;
+  }
+
   .knitting-form__send {
     width: 700px;
     margin-left: 175px;
