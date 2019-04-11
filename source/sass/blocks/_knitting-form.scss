@@ -81,13 +81,49 @@
 
   .knitting-form__wrapper {
     width: 501px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
+  .knitting-form__label {
+    &--color {
+      width: 50%;
+    }
+
+    &--type {
+      width: 100%;
+    }
+  }
+
   .knitting-form__name-input {
     display: flex;
+    width: 100%;
   }
 
   .knitting-form__send {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitting-form__legend {
+    width: 175px;
+  }
+
+  .knitting-form__wrapper {
+    width: 700px;
+  }
+
+  .knitting-form__label {
+    &--color {
+      width: 30%;
+    }
+  }
+  .knitting-form__header,
+  .knitting-form__send {
+    width: 700px;
+    margin-left: 175px;
   }
 }
