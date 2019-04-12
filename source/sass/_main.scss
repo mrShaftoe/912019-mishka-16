@@ -16,3 +16,19 @@ body {
   color: $default-text-color;
   margin: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__user-nav .site-menu__list {
+    justify-content: flex-end;
+  }
+
+  .page-header__main-nav .site-menu__item {
+    padding: 0 35px;
+  }
+
+  .page-header__main-nav .site-menu__item:nth-child(2n+1) {
+    box-shadow: none;
+    padding-left: 0;
+    width: 185px;
+  }
+}

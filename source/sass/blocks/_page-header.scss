@@ -25,14 +25,21 @@
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 130px;
+  }
+
+  .page-header__logo {
+    width: 112px;
+    height: 46px;
+    padding: 0;
+
+    @include block-outline;
   }
 
   .page-header__delivery {
     display: block;
     position: absolute;
     right: 50px;
-    bottom: 20px;
+    bottom: 0;
     z-index: 1;
   }
 
@@ -47,7 +54,11 @@
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
+    width: 149px;
+    height: 72px;
     align-self: flex-start;
+    margin: 0 auto;
+    margin-top: 9px;
   }
 
   .page-header__main-nav {
