@@ -17,6 +17,8 @@
   border: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .knitting-form__legend {
@@ -25,6 +27,11 @@
   line-height: 16px;
   color: $marker-color;
   text-transform: uppercase;
+}
+
+.knitting-form__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .knitting-form__label {
@@ -56,4 +63,72 @@
   font-size: 17px;
   line-height: 18px;
   color: transparentize($paragraph-color, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .knitting-form {
+    padding: 30px 50px 55px;
+  }
+
+  .knitting-form__fieldset {
+    flex-direction: row;
+  }
+
+  .knitting-form__legend {
+    width: 167px;
+    margin: 0;
+  }
+
+  .knitting-form__wrapper {
+    width: 501px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .knitting-form__label {
+    &--color {
+      width: 50%;
+    }
+
+    &--type {
+      width: 100%;
+    }
+  }
+
+  .knitting-form__name-input {
+    display: flex;
+    width: 100%;
+  }
+
+  .knitting-form__send {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitting-form__legend {
+    width: 175px;
+  }
+
+  .knitting-form__wrapper {
+    width: 700px;
+  }
+
+  .knitting-form__label {
+    &--color {
+      width: 30%;
+    }
+  }
+
+  .knitting-form__header {
+    width: 700px;
+    margin-left: 175px;
+  }
+
+  .knitting-form__send {
+    width: 700px;
+    margin-left: 175px;
+  }
 }
