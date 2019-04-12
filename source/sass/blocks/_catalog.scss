@@ -1,24 +1,24 @@
 .catalog {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .catalog__list {
-  @include list-reset;
   display: flex;
   flex-wrap: wrap;
   width: 260px;
+
+  @include list-reset;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    width: auto;
+    width: 668px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__list {
     margin-right: -51px;
+    width: 1050px;
   }
 }

@@ -1,6 +1,5 @@
 .page-header {
   @include block-shadow-top;
-  padding-top: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,10 +13,12 @@
 
 .page-header__logo {
   align-self: center;
+  padding: 22px 0;
 }
 
 .page-header__logo-image {
   vertical-align: bottom;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
