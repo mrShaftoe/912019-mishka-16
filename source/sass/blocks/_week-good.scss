@@ -4,10 +4,15 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 35px 0;
 }
 
 .week-good__header {
   width: 260px;
+}
+
+.week-good__title {
+  margin-bottom: 8px;
 }
 
 .week-good__label {
@@ -31,10 +36,15 @@
   line-height: 20px;
   color: $paragraph-color;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .week-good__table-row {
   box-shadow: 0 1px 0 0 $border-color;
+}
+
+.week-good__table-cell {
+  padding: 8px 0;
 }
 
 .week-good__buy {
@@ -46,11 +56,14 @@
   font-weight: 700;
   text-align: center;
   color: $paragraph-color;
+  margin: 30px 0;
 }
 
 @media (min-width: $tablet-width) {
   .week-good {
     align-items: flex-start;
+    padding-top: 53px;
+    padding-bottom: 53px;
   }
 
   .week-good__header {
@@ -60,9 +73,28 @@
     align-items: center;
     justify-content: space-between;
   }
+  .week-good__title {
+    margin: 0;
+  }
 
   .week-good__description {
-    width: 292px;
+    width: 290px;
+  }
+
+  .week-good__text {
+    margin: 50px 0;
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .week-good__table {
+    margin: 0;
+  }
+
+  .week-good__price {
+    margin-top: 45px;
+    margin-bottom: 30px;
   }
 
   .week-good__buy {
@@ -72,7 +104,12 @@
   .week-good__picture {
     position: absolute;
     right: 50px;
+    bottom: 53px;
     z-index: -1;
+    width: 333px;
+    height: 404px;
+
+    @include block-outline;
   }
 }
 
