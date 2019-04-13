@@ -12,20 +12,31 @@
 }
 
 .products__link {
-  display: block;
-  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 30px;
   font-size: 19px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   width: 320px;
+  position: relative;
+
+  .products__icon {
+    fill: #149080;
+    opacity: 0.5;
+  }
 
   &--interrior {
     background-color: #63d1bb;
+    padding-bottom: 18px;
+    padding-right: 36px;
   }
 
   &--toys {
     background-color: #56c3b2;
+    padding-bottom: 22px;
+    padding-right: 27px;
   }
 }
 
@@ -40,8 +51,20 @@
 
   .products__link {
     width: 334px;
-    padding: 35px;
+    padding: 35px 36px;
     min-height: 119px;
+
+    &--interrior {
+      padding-bottom: 27px;
+      padding-right: 36px;
+      padding-top: 30px;
+    }
+
+    &--toys {
+      padding-bottom: 28px;
+      padding-right: 34px;
+      padding-top: 31px;
+    }
   }
 }
 
