@@ -15,7 +15,7 @@
   display: block;
 }
 
-.item-card__picture {
+.item-card__picture img{
   vertical-align: bottom;
 }
 
@@ -48,14 +48,26 @@
   font-weight: 700;
 }
 
+.item-card__add-button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   .item-card {
     flex-direction: row;
     width: 668px;
   }
 
-  .item-card__picture-link {
-    width: 50%;
+  .item-card__content {
+    width: auto;
+  }
+
+  .item-card__picture {
+    width: 334px;
+    height: 334px;
+    background-color: pink;
   }
 }
 
