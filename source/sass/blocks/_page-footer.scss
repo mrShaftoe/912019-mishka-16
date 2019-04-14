@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $page-second-bg-color;
+  margin-bottom: -5px;
 }
 
 .page-footer__wrapper {
@@ -7,6 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
 }
 
 .page-footer__logo {
@@ -28,6 +30,7 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
+    padding: 0 50px;
   }
 
   .page-footer__logo {
