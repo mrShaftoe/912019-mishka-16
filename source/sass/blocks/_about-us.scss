@@ -6,6 +6,7 @@
 
 .about-us__header {
   width: 260px;
+  margin: 30px 0;
 }
 
 .about-us__list {
@@ -20,15 +21,47 @@
   font-weight: 700;
   line-height: 20px;
   width: 260px;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-bottom: 30px;
+
+  &--ecological {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--handmade {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--scandinavian-style {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--homeland-manufacture {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--likes {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--gift-packed {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 
   &:nth-child(even) {
-    order: 1;
+    @media (max-width: $tablet-width - 1px) {
+      order: 1;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .about-us__header {
     width: 668px;
+    margin-top: 60px;
+    margin-bottom: 50px;
   }
 
   .about-us__list {
@@ -37,10 +70,8 @@
 
   .about-us__item {
     width: 334px;
-
-    &:nth-child(even) {
-      order: 0;
-    }
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
