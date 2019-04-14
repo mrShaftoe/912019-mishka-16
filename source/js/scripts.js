@@ -17,4 +17,3 @@ toggle.addEventListener("click", function () {
     }
   });
 });
-

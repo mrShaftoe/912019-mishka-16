@@ -19,9 +19,18 @@
   padding: 0;
 }
 
-@mixin zigzag-border {
-  border-bottom: 6px solid transparent;
-  border-image: url("../img/bg-zigzag-line.svg") 100 round round;
+@mixin zigzag-border($height) {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: $height;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+  }
 }
 
 @mixin block-outline($color: green) {

@@ -1,5 +1,5 @@
 .reviews {
-  @include zigzag-border;
+  @include zigzag-border(6px);
   padding: 30px 30px 45px;
   position: relative;
 }

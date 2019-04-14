@@ -31,8 +31,7 @@
     width: 112px;
     height: 46px;
     padding: 0;
-
-    @include block-outline;
+    background-color: pink;
   }
 
   .page-header__delivery {

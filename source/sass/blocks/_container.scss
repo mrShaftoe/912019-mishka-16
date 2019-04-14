@@ -1,8 +1,6 @@
 .container {
   width: 320px;
   margin: 0 auto;
-
-  @include block-outline;
 }
 
 @media (min-width: $tablet-width) {
