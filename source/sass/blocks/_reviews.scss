@@ -2,38 +2,96 @@
   @include zigzag-border(6px);
   padding: 27px 30px 45px;
   position: relative;
-  height: 656px; //временно для Pixel Perfect
+}
+
+.reviews__header {
+  margin-bottom: 38px;
 }
 
 .reviews__list {
   @include list-reset;
+
+  margin-bottom: 36px;
+}
+
+.reviews__pagination {
+  display: flex;
+  border: 1px solid $border-color;
+  margin-bottom: 38px;
+}
+
+.reviews__pagination-button {
+  width: 50%;
+  height: 52px;
+  background: none;
+  border: none;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--next {
+    @include block-shadow-left;
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 30px 50px 45px;
+    padding: 86px 50px 102px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
     height: 542px;
+
+    @include zigzag-border(15px);
+  }
+
+  .reviews__header {
+    margin-bottom: 65px;
+  }
+
+  .reviews__list {
+    margin: 0;
   }
 
   .reviews__button {
     position: absolute;
-    top: 30px;
+    top: 86px;
     right: 50px;
+    width: 175px;
   }
 
   .reviews__pagination {
     position: absolute;
-    bottom: 45px;
+    bottom: 102px;
     right: 50px;
+    width: 175px;
+    border: none;
+    margin: 0;
+  }
+
+  .reviews__pagination-button {
+    box-shadow: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    height: 548px;
+    padding: 80px 50px 90px;
   }
 
   .reviews__list {
@@ -42,5 +100,13 @@
 
   .reviews__title {
     margin-left: 175px;
+  }
+
+  .reviews__button {
+    top: 83px;
+  }
+
+  .reviews__pagination {
+    bottom: 120px;
   }
 }
