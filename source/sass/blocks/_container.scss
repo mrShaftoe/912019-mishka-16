@@ -1,19 +1,19 @@
 .container {
   width: 320px;
   margin: 0 auto;
-
-  @include block-outline;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
-    padding: 0 50px;
+    min-width: 768px;
+    width: 87%;
+    padding: 0 6.5%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: $desktop-width;
+    padding: 0 50px;
   }
 }

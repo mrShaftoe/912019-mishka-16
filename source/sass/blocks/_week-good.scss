@@ -1,7 +1,10 @@
 .week-good {
   @include zigzag-border(6px);
-  padding: 35px 30px;
   position: relative;
+
+  @media (max-width: $tablet-width - 1px) {
+    padding: 35px 30px;
+  }
 }
 
 .week-good__header {
@@ -64,7 +67,8 @@
 
 @media (min-width: $tablet-width) {
   .week-good {
-    padding: 53px 50px;
+    padding-top: 53px;
+    padding-bottom: 53px;
 
     @include zigzag-border(15px);
   }
@@ -96,7 +100,7 @@
   }
 
   .week-good__description {
-    width: 290px;
+    width: 43%;
   }
 
   .week-good__text {
@@ -111,7 +115,7 @@
   }
 
   .week-good__buy {
-    width: 290px;
+    width: 43%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -147,6 +151,11 @@
     margin-left: 175px;
   }
 
+  .week-good__description {
+    width: 350px;
+    padding-right: 58px;
+  }
+
   .week-good__label {
     order: -1;
     width: 175px;
@@ -163,6 +172,8 @@
 
   .week-good__buy {
     position: static;
+    width: 350px;
+    padding-right: 58px;
   }
 
   .week-good__picture {

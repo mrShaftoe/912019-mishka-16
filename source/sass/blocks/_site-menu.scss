@@ -27,6 +27,27 @@
   &--icon {
     padding-left: 0;
   }
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+
+    .site-menu__icon {
+      fill: $marker-color;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    .site-menu__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.site-menu__icon {
+  fill: $icon-color;
 }
 
 @media (max-width: $tablet-width - 1px) {
@@ -108,7 +129,6 @@
 
   .site-menu__item {
     padding: 0;
-    max-width: 265px;
 
     @include block-shadow-left;
   }

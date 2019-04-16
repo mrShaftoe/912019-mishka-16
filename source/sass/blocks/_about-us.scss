@@ -59,17 +59,17 @@
 
 @media (min-width: $tablet-width) {
   .about-us__header {
-    width: 668px;
+    width: 100%;
     margin-top: 60px;
     margin-bottom: 50px;
   }
 
   .about-us__list {
-    width: 668px;
+    width: auto;
   }
 
   .about-us__item {
-    width: 334px;
+    width: 50%;
     font-size: 20px;
     line-height: 22px;
   }

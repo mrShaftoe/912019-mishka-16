@@ -1,6 +1,7 @@
 .developer {
   @include block-shadow-top;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   padding: 22px 0;
@@ -15,10 +16,26 @@
 
 .developer__logo {
   vertical-align: bottom;
+  fill: #63d1bb;
+}
+
+.developer__link {
+  &:hover .developer__logo,
+  &:focus .developer__logo {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    + .developer__title {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .developer {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }

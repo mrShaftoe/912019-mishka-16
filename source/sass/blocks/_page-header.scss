@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  z-index: 5;
 }
 
 .page-header__delivery {
@@ -14,6 +15,15 @@
 .page-header__logo {
   align-self: center;
   padding: 22px 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
@@ -45,6 +55,7 @@
   .page-header__main-nav {
     order: 2;
     z-index: 1;
+    min-width: 50%;
   }
 
   .page-header__user-nav {
@@ -64,5 +75,6 @@
   .page-header__main-nav {
     order: -1;
     font-size: 17px;
+    min-width: 0;
   }
 }
