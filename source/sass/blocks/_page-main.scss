@@ -12,7 +12,7 @@
     background-color: #f9f9f9;
 
     .page-main__title {
-      margin-bottom: 120px;
+      margin-bottom: 123px;
     }
   }
 }
@@ -22,14 +22,13 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
-  margin: 75px auto;
+  margin: 70px auto;
   width: 244px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__header {
-    margin-top: -50px;
-    margin-bottom: 80px;
+    margin-top: -42px;
 
     &--index {
       background-image: url("../img/hero-tablet@1x.jpg");
@@ -47,7 +46,7 @@
       left: 0;
       right: 0;
       height: 24px;
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 100%;
     }
@@ -66,7 +65,7 @@
 @media (min-width: $desktop-width) {
   .page-main__header {
     &--index {
-      background-image: url("../../img/hero-desktop@1x.jpg");
+      background-image: url("../img/hero-desktop@1x.jpg");
 
       .page-main__title {
         margin-bottom: 354px;

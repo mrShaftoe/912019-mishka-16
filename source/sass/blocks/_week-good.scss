@@ -1,18 +1,21 @@
 .week-good {
   @include zigzag-border(6px);
   position: relative;
+  margin-bottom: 27px;
 
   @media (max-width: $tablet-width - 1px) {
-    padding: 35px 30px;
+    padding: 27px 30px;
+    padding-bottom: 42px;
   }
 }
 
 .week-good__header {
   width: 260px;
+  margin-bottom: 20px;
 }
 
 .week-good__title {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .week-good__label {
@@ -29,14 +32,14 @@
 
 .week-good__text {
   color: $paragraph-color;
-  margin: 30px 0;
+  margin-bottom: 12px;
 }
 
 .week-good__table {
   line-height: 20px;
   color: $paragraph-color;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .week-good__table-row {
@@ -44,7 +47,17 @@
 }
 
 .week-good__table-cell {
-  padding: 8px 0;
+  padding: 9px 0;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .week-good__table-cell:last-child {
+    padding-left: 12px;
+  }
+}
+
+.week-good__picture {
+  margin-bottom: 20px;
 }
 
 .week-good__buy {
@@ -56,19 +69,20 @@
   font-weight: 700;
   text-align: center;
   color: $paragraph-color;
-  margin: 30px 0;
+  margin-bottom: 25px;
 }
 
-@media (max-width: $mobile-width - 1px) {
-  br {
+@media (max-width: $tablet-width - 1px) {
+  .week-good br {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .week-good {
-    padding-top: 53px;
-    padding-bottom: 53px;
+    padding-top: 47px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
 
     @include zigzag-border(15px);
   }
@@ -105,7 +119,7 @@
 
   .week-good__text {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 23px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -122,6 +136,7 @@
   }
 
   .week-good__price {
+    font-size: 20px;
     margin-top: 0;
     margin-bottom: 35px;
   }
@@ -130,7 +145,7 @@
     width: 333px;
     height: 404px;
     background-color: pink;
-    z-index: -1;
+    margin: 0;
   }
 }
 

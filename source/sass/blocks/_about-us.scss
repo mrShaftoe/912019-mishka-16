@@ -6,7 +6,7 @@
 
 .about-us__header {
   width: 260px;
-  margin: 30px 0;
+  margin-bottom: 32px;
 }
 
 .about-us__list {
@@ -21,17 +21,19 @@
   font-weight: 700;
   line-height: 20px;
   width: 260px;
-  padding-top: 60px;
+  padding-top: 53px;
   background-repeat: no-repeat;
   background-position: left top;
   margin-bottom: 30px;
 
   &--ecological {
     background-image: url("../img/icon-feature-flower.svg");
+    background-position-x: 8px;
   }
 
   &--handmade {
     background-image: url("../img/icon-feature-ball.svg");
+    background-position: 3px 2px;
   }
 
   &--scandinavian-style {
@@ -40,14 +42,17 @@
 
   &--homeland-manufacture {
     background-image: url("../img/icon-feature-rocket.svg");
+    background-position-y: 4px;
   }
 
   &--likes {
     background-image: url("../img/icon-feature-heart.svg");
+    background-position: 7px 6px;
   }
 
   &--gift-packed {
     background-image: url("../img/icon-feature-gift.svg");
+    background-position: 3px 2px;
   }
 
   &:nth-child(even) {
@@ -58,9 +63,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 50px;
+    margin-bottom: 27px;
+  }
+
   .about-us__header {
     width: 100%;
-    margin-top: 60px;
     margin-bottom: 50px;
   }
 
@@ -72,6 +81,7 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 57px;
   }
 }
 

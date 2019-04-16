@@ -1,6 +1,7 @@
 .contacts {
-  padding: 45px 0 40px;
+  padding: 39px 0 40px;
   position: relative;
+  height: 895px; // временно для PixelPerfect
 }
 
 .contacts__content {
@@ -47,6 +48,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0;
+    height: 928px;
+  }
+
   .contacts__content {
     padding: 0 50px;
   }
