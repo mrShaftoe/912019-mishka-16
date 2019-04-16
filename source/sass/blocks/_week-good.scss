@@ -151,14 +151,16 @@
 
 @media (min-width: $desktop-width) {
   .week-good {
-    padding-top: 63px;
-    padding-bottom: 70px;
+    padding-top: 93px;
+    padding-bottom: 97px;
 
     @include zigzag-border(23px);
   }
 
   .week-good__header {
     justify-content: flex-start;
+    padding-top: 32px;
+    margin-bottom: 46px;
   }
 
   .week-good__content {
@@ -178,11 +180,11 @@
   }
 
   .week-good__text {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
   }
 
   .week-good__table {
-    margin-bottom: 110px;
+    margin-bottom: 107px;
   }
 
   .week-good__buy {
@@ -197,5 +199,6 @@
     bottom: 0;
     width: 525px;
     height: 636px;
+    z-index: -1;
   }
 }
