@@ -9,4 +9,15 @@
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid $paragraph-color;
+  padding: 14px 0;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $paragraph-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

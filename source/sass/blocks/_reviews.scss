@@ -1,7 +1,8 @@
 .reviews {
-  @include zigzag-border;
-  padding: 30px 30px 45px;
+  @include zigzag-border(6px);
+  padding: 27px 30px 45px;
   position: relative;
+  height: 656px; //временно для Pixel Perfect
 }
 
 .reviews__list {
@@ -11,9 +12,10 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 30px 50px 45px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
+    height: 542px;
   }
 
   .reviews__button {
@@ -30,6 +32,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    height: 548px;
+  }
+
   .reviews__list {
     margin-left: 175px;
   }

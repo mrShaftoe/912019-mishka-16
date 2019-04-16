@@ -12,36 +12,82 @@
 }
 
 .products__link {
-  display: block;
-  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
   font-size: 19px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   width: 320px;
+  position: relative;
 
   &--interrior {
     background-color: #63d1bb;
+    padding-bottom: 21px;
+    padding-right: 36px;
   }
 
   &--toys {
     background-color: #56c3b2;
+    padding-bottom: 23px;
+    padding-right: 27px;
+  }
+
+  .products__icon {
+    fill: #149080;
+    opacity: 0.5;
+  }
+
+  &:hover,
+  &:focus {
+    .products__icon {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    .products__text {
+      opacity: 0.3;
+    }
+
+    .products__icon {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .products {
-    margin-top: -119px;
-  }
-
   .products__list {
     flex-direction: row;
+    width: 100%;
+  }
+
+  .products__item {
+    width: 50%;
   }
 
   .products__link {
-    width: 334px;
-    padding: 35px;
-    min-height: 119px;
+    width: auto;
+    padding: 35px 36px;
+
+    &--interrior {
+      padding-bottom: 27px;
+      padding-right: 36px;
+      padding-top: 30px;
+    }
+
+    &--toys {
+      padding-bottom: 28px;
+      padding-right: 34px;
+      padding-top: 31px;
+    }
+
+    .products__text {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
