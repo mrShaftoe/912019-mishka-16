@@ -1,54 +1,58 @@
-.item-card {
-  border: solid 1px $border-color;
-  width: 260px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.item__card {
+  width: 100%;
 }
 
-.item-card__title {
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.item-card__picture-link {
-  display: block;
-}
-
-.item-card__picture img{
+.item-card__picture img {
   vertical-align: bottom;
 }
 
 .item-card__content {
-  padding: 0 25px;
+  border: 1px solid $border-color;
+  border-top: none;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.item-card__price-cart {
-  @include block-shadow-top;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.item-card__header {
+  margin-bottom: 20px;
 }
 
-.item-card__link {
-  color: inherit;
-  text-decoration: none;
+.item-card__title {
+  margin: 0;
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 10px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .item-card__stats {
   font-size: 13px;
   line-height: 30px;
   color: $paragraph-color;
+  margin: 0;
+}
+
+.item-card__buy {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+
+  @include block-shadow-top;
 }
 
 .item-card__price {
+  font-size: 15px;
   font-weight: 700;
+  margin: 0;
 }
 
-.item-card__add-button {
+.item-card__button {
   border: none;
   background: none;
   padding: 0;
@@ -56,12 +60,8 @@
 
 @media (min-width: $tablet-width) {
   .item-card {
-    flex-direction: row;
+    display: flex;
     width: 668px;
-  }
-
-  .item-card__content {
-    width: auto;
   }
 
   .item-card__picture {
@@ -69,16 +69,41 @@
     height: 334px;
     background-color: pink;
   }
+
+  .item-card__content {
+    width: 50%;
+    border: 1px solid $border-color;
+    border-left: none;
+  }
+
+  .item-card__title {
+    font-size: 20px;
+  }
+
+  .item-card__stats {
+    font-size: 15px;
+  }
+
+  .item-card__price {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .item-card {
     width: 316px;
     flex-direction: column;
-    margin-right: 51px;
   }
 
-  .item-card__picture-link {
-    width: 100%;
+  .item-card__picture {
+    width: 316px;
+    height: 462px;
+  }
+
+  .item-card__content {
+    width: 316px;
+    flex-grow: 1;
+    border: 1px solid $border-color;
+    border-top: none;
   }
 }

@@ -1,14 +1,14 @@
-.catalog {
-  display: flex;
-  justify-content: center;
+@media (max-width: $tablet-width - 1px) {
+  .catalog {
+    padding: 30px;
+  }
 }
 
 .catalog__list {
+  @include list-reset;
+
   display: flex;
   flex-wrap: wrap;
-  width: 260px;
-
-  @include list-reset;
 }
 
 .catalog__item {
@@ -17,13 +17,11 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    width: 668px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog__list {
     margin-right: -51px;
-    width: 1050px;
+  }
+
+  .catalog__item {
+    margin-bottom: 55px;
+    margin-right: 51px;
   }
 }
