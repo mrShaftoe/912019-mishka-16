@@ -1,6 +1,7 @@
 @media (max-width: $tablet-width - 1px) {
   .catalog {
     padding: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -16,6 +17,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog__list {
+    padding-top: 80px;
+  }
+
   .catalog__item {
     margin-bottom: 55px;
   }

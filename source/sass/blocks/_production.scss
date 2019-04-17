@@ -1,5 +1,7 @@
 .production {
-  padding: 0 30px;
+  @media (max-width: $tablet-width - 1px) {
+    padding: 0 30px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,9 +10,16 @@
 }
 
 .production__header {
-  padding: 0 30px;
+  padding: 29px 30px 26px;
   border: 1px solid $border-color;
   border-bottom: none;
+}
+
+.production__title {
+  padding-left: 57px;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .production__content {
@@ -20,55 +29,99 @@
 }
 
 .production__video {
-  @include block-outline;
+  position: relative;
+
+  &::before {
+    content: url("../../img/icon-play.svg");
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 50%;
+    margin-top: -38px;
+    left: 50%;
+    margin-left: -50px;
+    cursor: pointer;
+  }
 }
 
 .production__picture {
   vertical-align: bottom;
 }
 
-.production__title {
-  font-size: 17px;
-  margin: 0;
-  margin-left: 50px;
-  padding-left: 50px;
-}
-
 .production__text {
   font-size: 13px;
   color: $paragraph-color;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .production {
-    padding: 0 50px;
+    margin-bottom: 60px;
+  }
+
+  .production__header {
+    padding: 42px;
+  }
+
+  .production__title {
+    background-position-y: -3px;
+    padding: 4px 65px;
+  }
+
+  .production__content {
+    padding: 42px;
+    padding-top: 0;
+  }
+
+  .production__text {
+    font-size: 15px;
   }
 
   .production__video {
     order: -1;
+    height: 455px;
+    background-color: pink;
+    border: 1px solid $border-color;
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
-    align-items: flex-end;
-    min-height: 455px;
+    flex-direction: row;
   }
 
   .production__video {
     width: 682px;
     height: 455px;
-    position: absolute;
-    top: 0;
-    left: 50px;
+    border: none;
   }
 
   .production__header {
-    width: 368px;
+    position: absolute;
+    width: 230px;
+    top: 47px;
+    right: 106px;
+    border: none;
+    padding: 0;
+  }
+
+  .production__title {
+    padding: 0;
+    padding-top: 63px;
   }
 
   .production__content {
     width: 368px;
+    border: 1px solid $border-color;
+    padding: 47px 56px 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .production__text {
+    margin-bottom: 50px;
   }
 }
