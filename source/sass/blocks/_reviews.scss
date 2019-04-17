@@ -92,6 +92,8 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding: 80px 50px 90px;
+    background-position-x: 50px;
+    margin-bottom: 70px;
   }
 
   .reviews__list {
