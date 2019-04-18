@@ -48,6 +48,25 @@
 .knitting-form__wrapper {
   display: flex;
   flex-direction: column;
+
+  &--icon {
+    flex-direction: row;
+  }
+}
+
+.knitting-form__icon {
+  padding: 15px 0;
+  align-self: flex-start;
+  border-bottom: 2px solid #000000;
+
+  &--email {
+    padding-bottom: 7px;
+  }
+
+  svg {
+    vertical-align: bottom;
+    fill: $icon-color;
+  }
 }
 
 .knitting-form__label {
@@ -136,6 +155,20 @@ input:checked + .knitting-form__label {
   font-family: $font;
   font-size: 17px;
   line-height: 18px;
+
+  &:hover,
+  &:focus {
+    border-color: $marker-color;
+    outline: none;
+
+    + .knitting-form__icon {
+      border-color: $marker-color;
+
+      svg {
+        fill: $marker-color;
+      }
+    }
+  }
 }
 
 .knitting-form__input::placeholder {
