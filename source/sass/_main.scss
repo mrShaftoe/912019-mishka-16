@@ -16,17 +16,8 @@ body {
   color: $default-text-color;
   margin: 0;
 }
-@media (min-width: $tablet-width) {
-  body {
-    min-width: $tablet-width;
-  }
-}
 
 @media (min-width: $desktop-width) {
-  body {
-    min-width: $desktop-width;
-  }
-
   .page-header__user-nav .site-menu__list {
     justify-content: flex-end;
   }

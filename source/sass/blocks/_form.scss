@@ -249,6 +249,7 @@ input:checked + .form__label {
       flex-direction: row;
       flex-wrap: wrap;
     }
+
     &--choice {
       margin-bottom: -24px;
     }
@@ -256,6 +257,7 @@ input:checked + .form__label {
 
   .form__field {
     width: 501px;
+
     &--label {
       flex-direction: row;
       align-items: center;
@@ -278,6 +280,7 @@ input:checked + .form__label {
 
   .form__button {
     font-size: 19px;
+    width: 230px;
   }
 
   .form__footer {
@@ -287,16 +290,11 @@ input:checked + .form__label {
     align-items: center;
   }
 
-  .form__button {
-    width: 230px;
-  }
-
   .form__input {
     &--textarea {
       width: 501px;
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
