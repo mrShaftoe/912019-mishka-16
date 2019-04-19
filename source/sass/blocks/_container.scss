@@ -5,9 +5,8 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    min-width: 768px;
-    width: 87%;
-    padding: 0 6.5%;
+    width: $tablet-width;
+    padding: 0 50px;
   }
 }
 

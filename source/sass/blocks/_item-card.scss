@@ -91,7 +91,7 @@
 @media (min-width: $tablet-width) {
   .item-card {
     display: flex;
-    width: 100%;
+    width: 668px;
   }
 
   .item-card__picture {
@@ -101,7 +101,7 @@
   }
 
   .item-card__content {
-    width: 50%;
+    width: 334px;
     border: 1px solid $border-color;
     border-left: none;
     flex-grow: 1;
