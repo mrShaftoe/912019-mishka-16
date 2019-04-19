@@ -61,15 +61,15 @@
 @media (min-width: $tablet-width) {
   .products__list {
     flex-direction: row;
-    width: 668px;
+    width: 100%;
   }
 
   .products__item {
-    width: 334px;
+    width: 50%;
   }
 
   .products__link {
-    width: auto;
+    width: 334px;
     padding: 35px 36px;
 
     &--interrior {

@@ -159,6 +159,7 @@ input:checked + .form__label {
     padding: 17px;
     border: 2px solid #000000;
     resize: none;
+    width: 100%;
   }
 
   &::placeholder {
@@ -226,7 +227,7 @@ input:checked + .form__label {
   }
 
   .form__legend {
-    width: 25%;
+    width: 167px;
     align-items: flex-start;
     margin: 0;
     margin-top: 17px;
@@ -238,10 +239,6 @@ input:checked + .form__label {
     &--one-field {
       align-self: center;
       margin-top: 0;
-
-      & + .form__field {
-        width: 75%;
-      }
     }
   }
 
@@ -258,6 +255,7 @@ input:checked + .form__label {
   }
 
   .form__field {
+    width: 501px;
     &--label {
       flex-direction: row;
       align-items: center;
@@ -293,6 +291,12 @@ input:checked + .form__label {
     width: 230px;
   }
 
+  .form__input {
+    &--textarea {
+      width: 501px;
+    }
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -300,6 +304,12 @@ input:checked + .form__label {
     font-size: 17px;
     margin: 0 auto;
     width: 700px;
+
+    &--note {
+      width: auto;
+      margin: 0;
+      margin-left: auto;
+    }
   }
 
   .form__legend {
@@ -311,9 +321,23 @@ input:checked + .form__label {
     width: 875px;
   }
 
+  .form__field {
+    width: 700px;
+  }
+
   .form__label {
     &--checkbox {
       width: 30%;
     }
+  }
+
+  .form__input {
+    &--textarea {
+      width: 700px;
+    }
+  }
+
+  .form__footer {
+    width: 800px;
   }
 }
