@@ -61,10 +61,15 @@
             Вязание на заказ
         </h1>
       </header>
-      <form action="https://echo.htmlacademy.ru" class="form container">
-        <div class="form__fieldset">
+      <form action="https://echo.htmlacademy.ru" class="form">
+        <header class="form__header container">
+          <h2 class="visually-hidden">Форма заказа</h2>
+          <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </header>
+
+        <div class="form__fieldset container">
           <div class="form__legend">Тип</div>
-          <div class="form__fields">
+          <div class="form__fields form__fields--choice">
             <input type="radio" id="interrior" name="type" value="interrior" class="visually-hidden" checked>
             <label for="interrior" class="form__label form__label--radio">Аксессуар для
               интерьера</label>
@@ -73,9 +78,9 @@
           </div>
         </div>
 
-        <div class="form__fieldset">
+        <div class="form__fieldset form__fieldset--bg container">
           <div class="form__legend">ЦВет</div>
-          <div class="form__fields">
+          <div class="form__fields  form__fields--choice form__fields--colors">
             <input type="checkbox" id="color-1" class="visually-hidden" name="color" value="color-1" checked>
             <label for="color-1" class="form__label form__label--checkbox">Белый</label>
             <input type="checkbox" id="color-2" class="visually-hidden" name="color" value="color-2" checked>
@@ -91,7 +96,7 @@
           </div>
         </div>
 
-        <div class="form__fieldset">
+        <div class="form__fieldset container">
           <div class="form__legend">ФИО</div>
           <div class="form__fields">
             <div class="form__field form__field--label">
@@ -111,8 +116,8 @@
           </div>
         </div>
 
-        <div class="form__fieldset">
-          <div class="form__legend">Тел</div>
+        <div class="form__fieldset form__fieldset--bg form__fieldset--solid container">
+          <div class="form__legend form__legend--one-field">Тел</div>
           <div class="form__field form__field--icon">
             <input type="tel" class="form__input" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             <div class="form__icon-wrapper">
@@ -132,25 +137,28 @@
           </div>
         </div>
 
-        <div class="form__fieldset">
-          <div class="form__legend">E-mail</div>
-          <div class="form__fields">
-            <div class="form__field form__field--icon">
-              <input type="email" class="form__input" name="email" placeholder="Ваш Email*">
-              <div class="form__icon-wrapper">
-                <svg class="form__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                  <path d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
-                </svg>
-              </div>
+        <div class="form__fieldset form__fieldset--bg container">
+          <div class="form__legend form__legend--one-field">E-mail</div>
+          <div class="form__field form__field--icon">
+            <input type="email" class="form__input" name="email" placeholder="Ваш Email*">
+            <div class="form__icon-wrapper">
+              <svg class="form__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                <path d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
+              </svg>
             </div>
           </div>
         </div>
 
-        <div class="form__fieldset">
+        <div class="form__fieldset container">
             <div class="form__legend">Доп</div>
             <div class="form__field">
               <textarea cols="30" rows="10" class="form__input form__input--textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
+        </div>
+
+        <div class="form__footer container">
+          <p class="form__text form__text--note">*Поля обязательны для заполнения</p>
+          <button type="submit" class="button form__button">Отправить заказ</button>
         </div>
       </form>
     </main>
