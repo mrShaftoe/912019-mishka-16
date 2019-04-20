@@ -6,6 +6,7 @@
 
 .reviews__header {
   margin-bottom: 24px;
+}
 
 .reviews__list {
   @include list-reset;
@@ -50,7 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 86px 50px 102px;
+    padding: 78px 50px 133px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
@@ -59,7 +60,7 @@
   }
 
   .reviews__header {
-    margin-bottom: 65px;
+    margin-bottom: 48px;
   }
 
   .reviews__list {
@@ -68,14 +69,14 @@
 
   .reviews__button {
     position: absolute;
-    top: 86px;
+    top: 79px;
     right: 50px;
     width: 175px;
   }
 
   .reviews__pagination {
     position: absolute;
-    bottom: 102px;
+    bottom: 133px;
     right: 50px;
     width: 175px;
     border: none;

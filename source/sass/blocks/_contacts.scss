@@ -76,11 +76,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding: 46px 0 57px;
+  }
+
+  .contacts__content {
+    margin-bottom: 48px;
+  }
+
   .contacts__header {
     padding: 16px 0;
     background-image: url("../img/icon-flag.svg");
     background-position: top right;
     background-repeat: no-repeat;
+    margin-bottom: 33px;
   }
 
   .contacts__list {
@@ -91,10 +100,11 @@
   .contacts__item {
     width: 334px;
     justify-content: flex-start;
+    margin: 0;
   }
 
   .contacts__key {
-    width: 80px;
+    width: 76px;
   }
 
   .contacts__value {
@@ -103,6 +113,7 @@
 
   .contacts__map {
     background-image: url("../img/map-tablet@1x.jpg");
+    margin-bottom: 55px;
   }
 
   .contacts__button {
