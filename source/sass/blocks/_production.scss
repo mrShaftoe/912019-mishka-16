@@ -91,6 +91,7 @@
 @media (min-width: $desktop-width) {
   .production {
     flex-direction: row;
+    margin-bottom: 105px;
   }
 
   .production__video {
@@ -103,26 +104,26 @@
     position: absolute;
     width: 230px;
     top: 47px;
-    right: 106px;
+    right: 109px;
     border: none;
     padding: 0;
   }
 
   .production__title {
     padding: 0;
-    padding-top: 63px;
+    padding-top: 49px;
   }
 
   .production__content {
     width: 368px;
     border: 1px solid $border-color;
-    padding: 47px 56px 60px 80px;
+    padding: 47px 56px 59px 78px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
   .production__text {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
 }

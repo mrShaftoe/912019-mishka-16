@@ -142,5 +142,10 @@
     width: 316px;
     border: 1px solid $border-color;
     border-top: none;
+    padding-bottom: 24px;
+  }
+
+  .item-card__price {
+    margin-left: 0;
   }
 }

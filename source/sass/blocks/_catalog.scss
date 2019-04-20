@@ -32,8 +32,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 57px;
+  }
+
   .catalog__list {
     margin-right: -51px;
+    padding-top: 127px;
   }
 
   .catalog__item {
