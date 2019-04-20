@@ -1,17 +1,16 @@
 .reviews {
   @include zigzag-border(6px);
-  padding: 27px 30px 45px;
+  padding: 27px 30px 49px;
   position: relative;
 }
 
 .reviews__header {
-  margin-bottom: 38px;
-}
+  margin-bottom: 24px;
 
 .reviews__list {
   @include list-reset;
 
-  margin-bottom: 36px;
+  margin-bottom: 29px;
 }
 
 .reviews__pagination {

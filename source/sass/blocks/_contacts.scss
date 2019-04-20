@@ -5,7 +5,7 @@
 }
 
 .contacts {
-  padding: 39px 0 40px;
+  padding: 36px 0 40px;
   position: relative;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .contacts__header {
-  margin-bottom: 42px;
+  margin-bottom: 26px;
 }
 
 .contacts__list {
@@ -29,13 +29,14 @@
   font-size: 15px;
   line-height: 30px;
   color: $paragraph-color;
+  margin-bottom: 7px;
 }
 
 .contacts__item {
   width: 260px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .contacts__key {
@@ -43,7 +44,7 @@
 }
 
 .contacts__value {
-  width: 190px;
+  width: 183px;
   margin: 0;
 }
 
