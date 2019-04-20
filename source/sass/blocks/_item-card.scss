@@ -106,6 +106,7 @@
     border: 1px solid $border-color;
     border-left: none;
     flex-grow: 1;
+    padding: 25px 27px 25px;
   }
 
   .item-card__title {
@@ -118,6 +119,11 @@
 
   .item-card__price {
     font-size: 17px;
+    margin-left: 5px;
+  }
+
+  .item-card__button {
+    margin-right: 4px;
   }
 }
 

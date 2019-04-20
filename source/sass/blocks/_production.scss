@@ -57,11 +57,11 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 
   .production__header {
-    padding: 42px;
+    padding: 35px 40px 29px;
   }
 
   .production__title {
@@ -70,12 +70,13 @@
   }
 
   .production__content {
-    padding: 42px;
-    padding-top: 0;
+    padding: 0 42px 45px;
   }
 
   .production__text {
     font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 33px;
   }
 
   .production__video {
