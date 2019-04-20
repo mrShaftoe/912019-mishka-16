@@ -150,7 +150,7 @@
 
 @media (min-width: $desktop-width) {
   .week-good {
-    padding-top: 93px;
+    padding-top: 98px;
     padding-bottom: 97px;
 
     @include zigzag-border(23px);
@@ -158,8 +158,9 @@
 
   .week-good__header {
     justify-content: flex-start;
-    padding-top: 32px;
-    margin-bottom: 46px;
+    padding-top: 25px;
+    margin-bottom: 53px;
+    width: auto;
   }
 
   .week-good__content {

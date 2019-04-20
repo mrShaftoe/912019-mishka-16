@@ -90,9 +90,14 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding: 80px 50px 90px;
+    padding: 71px 50px 188px;
     background-position-x: 50px;
     margin-bottom: 70px;
+    @include zigzag-border(23px);
+    &::after {
+      left: 50px;
+      right: 50px;
+    }
   }
 
   .reviews__list {
@@ -103,11 +108,7 @@
     margin-left: 175px;
   }
 
-  .reviews__button {
-    top: 83px;
-  }
-
   .reviews__pagination {
-    bottom: 120px;
+    bottom: 188px;
   }
 }

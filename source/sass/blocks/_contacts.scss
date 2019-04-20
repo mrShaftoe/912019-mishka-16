@@ -134,14 +134,17 @@
   .contacts__content {
     width: 525px;
     padding: 0;
+    padding-top: 59px;
     min-width: auto;
   }
 
   .contacts__header {
     width: 525px;
     padding: 12px 0;
-    padding-left: 175px;
+    padding-left: 169px;
     background-position: top left;
+    background-position-x: 62px;
+    margin-bottom: 35px;
   }
 
   .contacts__list {
@@ -152,6 +155,7 @@
 
   .contacts__item {
     width: auto;
+    margin-bottom: 30px;
   }
 
   .contacts__map {
