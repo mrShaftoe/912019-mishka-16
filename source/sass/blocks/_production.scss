@@ -1,6 +1,6 @@
 .production {
   @media (max-width: $tablet-width - 1px) {
-    padding: 0 30px;
+    padding: 0 30px 59px;
   }
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .production__header {
-  padding: 29px 30px 26px;
+  padding: 24px 31px 24px;
   border: 1px solid $border-color;
   border-bottom: none;
 }
@@ -23,7 +23,7 @@
 }
 
 .production__content {
-  padding: 30px 34px;
+  padding: 28px 34px 32px;
   border: 1px solid $border-color;
   border-top: none;
 }
@@ -52,7 +52,7 @@
   font-size: 13px;
   color: $paragraph-color;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
