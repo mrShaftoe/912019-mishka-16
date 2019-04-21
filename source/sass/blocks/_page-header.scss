@@ -5,7 +5,7 @@
   justify-content: space-between;
   position: relative;
   z-index: 5;
-  width: 100%;
+  max-width: 100%;
 }
 
 .page-header__delivery {
@@ -43,7 +43,6 @@
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 668px;
     margin: 0 auto;
   }
 
@@ -74,10 +73,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    width: 1050px;
-  }
-
   .page-header__logo {
     width: 149px;
     height: 72px;

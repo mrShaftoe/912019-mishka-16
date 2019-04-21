@@ -7,6 +7,7 @@
 
 .site-menu__item {
   @include block-shadow-top;
+  padding-left: 32px;
 
   &--secondary {
     display: none;
@@ -22,7 +23,6 @@
   padding-bottom: 30px;
   padding-left: 46px;
   vertical-align: bottom;
-  margin: 0 auto;
 
   &--icon {
     padding-left: 0;
@@ -56,9 +56,11 @@
     height: 20px;
     border: 0;
     background: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
     outline: none;
     cursor: pointer;
-    padding: 0;
   }
 
   .site-menu__toggle:hover {
@@ -165,7 +167,7 @@
 
 @media (min-width: $desktop-width) {
   .site-menu {
-    width: 450px;
+    max-width: 450px;
   }
 
   .site-menu__item {

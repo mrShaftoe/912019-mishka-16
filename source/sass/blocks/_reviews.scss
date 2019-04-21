@@ -1,9 +1,7 @@
 .reviews {
   @include zigzag-border(6px);
-  padding: 27px 0 49px;
+  padding: 27px 30px 49px;
   position: relative;
-  width: 260px;
-  align-self: center;
 }
 
 .reviews__header {
@@ -53,11 +51,10 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 78px 0 133px;
+    padding: 78px 50px 133px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
-    width: 100%;
 
     @include zigzag-border(15px);
   }
