@@ -12,10 +12,6 @@
 .contacts__content {
   display: flex;
   flex-direction: column;
-
-  @media (max-width: $tablet-width - 1px) {
-    padding: 0 30px;
-  }
 }
 
 .contacts__header {
@@ -124,10 +120,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 0 50px;
+    padding: 0;
     display: flex;
     margin: 0 auto;
-    width: 1150px;
+    width: 1050px;
     margin-bottom: 105px;
   }
 

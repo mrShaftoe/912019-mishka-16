@@ -1,3 +1,8 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__header {
   @include block-shadow-top;
   background-color: $page-second-bg-color;

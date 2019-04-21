@@ -1,17 +1,16 @@
 .container {
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
-    padding: 0 50px;
+    width: $tablet-width - 100px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    width: $desktop-width - 100px;
   }
 }

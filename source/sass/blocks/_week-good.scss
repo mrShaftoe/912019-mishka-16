@@ -4,13 +4,12 @@
   margin-bottom: 27px;
 
   @media (max-width: $tablet-width - 1px) {
-    padding: 27px 30px;
+    padding-top: 27px;
     padding-bottom: 42px;
   }
 }
 
 .week-good__header {
-  width: 260px;
   margin-bottom: 20px;
 }
 
@@ -24,10 +23,6 @@
   line-height: 20px;
   color: $marker-color;
   text-transform: uppercase;
-}
-
-.week-good__description {
-  width: 260px;
 }
 
 .week-good__text {

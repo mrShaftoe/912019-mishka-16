@@ -5,6 +5,7 @@
   justify-content: space-between;
   position: relative;
   z-index: 5;
+  width: 100%;
 }
 
 .page-header__delivery {
@@ -15,6 +16,7 @@
 .page-header__logo {
   align-self: center;
   padding: 22px 0;
+
 
   &:hover,
   &:focus {
@@ -31,10 +33,18 @@
   margin: 0 auto;
 }
 
+.page-header__menu-toggle {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
@@ -64,6 +74,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: 1050px;
+  }
+
   .page-header__logo {
     width: 149px;
     height: 72px;
