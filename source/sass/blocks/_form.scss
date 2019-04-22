@@ -396,6 +396,11 @@ input:checked + .form__label {
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding-top: 121px;
+    padding-bottom: 50px;
+  }
+
   .form__text {
     margin: 0 auto;
     width: 700px;
@@ -412,6 +417,12 @@ input:checked + .form__label {
     padding-left: 60px;
   }
 
+  .form__fieldset {
+    &--textarea {
+      padding-bottom: 50px;
+    }
+  }
+
   .form__fields {
     width: 875px;
   }
@@ -423,6 +434,8 @@ input:checked + .form__label {
   .form__label {
     &--checkbox {
       width: 30%;
+      min-width: 0;
+      margin-right: 0;
     }
   }
 
@@ -432,7 +445,12 @@ input:checked + .form__label {
     }
   }
 
+  .form__icon-wrapper {
+    padding-right: 6px;
+  }
+
   .form__footer {
-    width: 800px;
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
