@@ -2,9 +2,10 @@
   line-height: 30px;
   color: $paragraph-color;
   margin: 0;
+  margin-bottom: 28px;
 }
 
-.review__author {
+.review__author-name {
   font-size: 17px;
   font-weight: 700;
   margin: 0;
@@ -15,4 +16,19 @@
   line-height: 30px;
   color: $paragraph-color;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review__text {
+    margin-bottom: 59px;
+    width: 644px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__text {
+    margin-bottom: 40px;
+    width: 770px;
+  }
 }

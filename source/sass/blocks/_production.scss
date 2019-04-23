@@ -1,5 +1,7 @@
 .production {
-  padding: 0 30px;
+  @media (max-width: $tablet-width - 1px) {
+    padding: 0 30px 59px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,67 +10,120 @@
 }
 
 .production__header {
-  padding: 0 30px;
+  padding: 24px 31px 24px;
   border: 1px solid $border-color;
   border-bottom: none;
 }
 
+.production__title {
+  padding-left: 57px;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .production__content {
-  padding: 30px 34px;
+  padding: 28px 34px 32px;
   border: 1px solid $border-color;
   border-top: none;
 }
 
 .production__video {
-  @include block-outline;
+  position: relative;
+
+  &::before {
+    content: url("../../img/icon-play.svg");
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 50%;
+    margin-top: -38px;
+    left: 50%;
+    margin-left: -50px;
+    cursor: pointer;
+  }
 }
 
 .production__picture {
   vertical-align: bottom;
 }
 
-.production__title {
-  font-size: 17px;
-  margin: 0;
-  margin-left: 50px;
-  padding-left: 50px;
-}
-
 .production__text {
   font-size: 13px;
   color: $paragraph-color;
   margin: 0;
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .production {
-    padding: 0 50px;
+    margin-bottom: 63px;
+  }
+
+  .production__header {
+    padding: 35px 40px 29px;
+  }
+
+  .production__title {
+    background-position-y: -3px;
+    padding: 4px 65px;
+  }
+
+  .production__content {
+    padding: 0 42px 45px;
+  }
+
+  .production__text {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 33px;
   }
 
   .production__video {
     order: -1;
+    height: 455px;
+    background-color: pink;
+    border: 1px solid $border-color;
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
-    align-items: flex-end;
-    min-height: 455px;
+    flex-direction: row;
+    margin-bottom: 105px;
   }
 
   .production__video {
     width: 682px;
     height: 455px;
-    position: absolute;
-    top: 0;
-    left: 50px;
+    border: none;
   }
 
   .production__header {
-    width: 368px;
+    position: absolute;
+    width: 230px;
+    top: 47px;
+    right: 109px;
+    border: none;
+    padding: 0;
+  }
+
+  .production__title {
+    padding: 0;
+    padding-top: 49px;
   }
 
   .production__content {
     width: 368px;
+    border: 1px solid $border-color;
+    padding: 47px 56px 59px 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .production__text {
+    margin-bottom: 46px;
   }
 }

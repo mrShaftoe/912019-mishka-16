@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 1;
 
   &--index {
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -22,8 +23,8 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
-  margin: 70px auto;
-  width: 244px;
+  margin: 71px auto 76px;
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,8 +43,10 @@
     &::after {
       content: "";
       position: absolute;
+      height: 24px;
       left: 0;
       right: 0;
+      bottom: -12px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 100%;
@@ -55,8 +58,8 @@
     width: 500px;
     font-size: 43px;
     line-height: 50px;
-    margin-top: 105px;
-    margin-bottom: 100px;
+    margin-top: 97px;
+    margin-bottom: 78px;
   }
 }
 
@@ -80,5 +83,7 @@
     width: 700px;
     font-size: 53px;
     line-height: 57px;
+    margin-top: 95px;
+    margin-bottom: 104px;
   }
 }
