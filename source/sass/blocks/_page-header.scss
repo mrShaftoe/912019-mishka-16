@@ -17,14 +17,15 @@
   align-self: center;
   padding: 22px 0;
 
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -47,10 +48,12 @@
   }
 
   .page-header__logo {
+    padding: 0;
+  }
+
+  .page-header__logo-image {
     width: 112px;
     height: 46px;
-    padding: 0;
-    background-color: pink;
   }
 
   .page-header__delivery {
@@ -74,9 +77,12 @@
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
+    align-self: flex-start;
+  }
+
+  .page-header__logo-image {
     width: 149px;
     height: 72px;
-    align-self: flex-start;
     margin: 0 auto;
     margin-top: 9px;
   }
