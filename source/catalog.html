@@ -151,7 +151,11 @@
             производства</h2>
         </header>
         <div class="production__video">
-          <img src="/img/video-mobile@1x.jpg" alt="" width="260" height="150" class="production__picture">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="/img/video-desktop@1x.jpg 1x, /img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/img/video-tablet@1x.jpg 1x, /img/video-tablet@2x.jpg 2x">
+            <img src="/img/video-mobile@1x.jpg" src="/img/video-mobile@2x.jpg 2x" alt="" width="260" height="150" class="production__picture">
+          </picture>
         </div>
         <div class="production__content">
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
