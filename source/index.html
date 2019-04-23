@@ -10,11 +10,13 @@
   <body>
     <header class="page-header container">
       <p class="page-header__delivery">Бесплатная доставка по России</p>
-      <div class="page-header__logo">
-        <a>
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин Мишка" width="86" height="35">
-        </a>
-      </div>
+        </picture>
+      </a>
       <nav class="page-header__main-nav site-menu site-menu--nojs">
         <button type="button" class="site-menu__toggle page-header__menu-toggle">
           <span class="visually-hidden">Открыть меню</span>
@@ -112,9 +114,11 @@
               </tr>
             </table>
           </div>
-          <div class="week-good__picture">
-            <img src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
-          </div>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="week-good__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки" width="260" height="315">
+          </picture>
           <div class="week-good__buy">
             <p class="week-good__price">Цена: 990 руб.</p>
             <a href="order.html" class="button week-good__button">Заказать</a>
@@ -185,7 +189,9 @@
         <div class="contacts__map">
 
         </div>
-        <a href="write-us.html" class="button contacts__button">Напишите нам</a>
+        <div class="contacts__button-wrapper container">
+          <a href="write-us.html" class="button contacts__button">Напишите нам</a>
+        </div>
 
       </section>
     </main>

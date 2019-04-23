@@ -164,6 +164,11 @@
     margin-bottom: 0;
   }
 
+  .contacts__button-wrapper {
+    width: auto;
+    min-width: 0;
+  }
+
   .contacts__button {
     position: absolute;
     bottom: 0;
