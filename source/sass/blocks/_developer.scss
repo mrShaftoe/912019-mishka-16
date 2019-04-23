@@ -1,7 +1,7 @@
 .developer {
   @include block-shadow-top;
   display: flex;
-
+  flex-direction: row-reverse;
   align-items: center;
   padding: 19px 0 24px;
 }
@@ -10,6 +10,7 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
+  margin-right: auto;
 }
 
 .developer__logo {
@@ -25,11 +26,19 @@
 
   &:active {
     opacity: 0.3;
+
+    + .developer__title {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .developer {
     box-shadow: none;
+  }
+
+  .developer__title {
+    margin-right: 30px;
   }
 }
