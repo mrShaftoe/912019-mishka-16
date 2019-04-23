@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: $mobile-width;
+  font-family: $font;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  color: $default-text-color;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__user-nav .site-menu__list {
+    justify-content: flex-end;
+  }
+
+  .page-header__main-nav .site-menu__item {
+    padding: 0 35px;
+  }
+
+  .page-header__main-nav .site-menu__item:nth-child(2n+1) {
+    box-shadow: none;
+    padding-left: 0;
+    width: 185px;
+  }
+}
