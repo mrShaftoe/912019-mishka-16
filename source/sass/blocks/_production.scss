@@ -81,10 +81,13 @@
 
   .production__video {
     order: -1;
-    height: 455px;
-    background-color: pink;
     border: 1px solid $border-color;
     border-bottom: none;
+  }
+
+  .production__picture {
+    width: 668px;
+    height: 455px;
   }
 }
 
@@ -95,9 +98,12 @@
   }
 
   .production__video {
+    border: none;
+  }
+
+  .production__picture {
     width: 682px;
     height: 455px;
-    border: none;
   }
 
   .production__header {
