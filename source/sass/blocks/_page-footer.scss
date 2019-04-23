@@ -13,6 +13,17 @@
 
 .page-footer__logo {
   display: none;
+
+  a[href] {
+    &:hover,
+    &:focus {
+      fill: $marker-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer__logo-image {
