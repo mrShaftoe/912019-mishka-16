@@ -14,4 +14,15 @@
 
 .social__item {
   margin-right: 40px;
+
+  a {
+    &:hover,
+    &:focus {
+      fill: $marker-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

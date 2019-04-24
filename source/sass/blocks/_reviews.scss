@@ -101,11 +101,6 @@
     margin-bottom: 70px;
 
     @include zigzag-border(23px);
-
-    &::after {
-      left: 50px;
-      right: 50px;
-    }
   }
 
   .reviews__list {
