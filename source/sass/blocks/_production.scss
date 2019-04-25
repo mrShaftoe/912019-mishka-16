@@ -30,17 +30,33 @@
 
 .production__video {
   position: relative;
+}
 
-  &::before {
-    content: url("../img/icon-play.svg");
-    width: 101px;
-    height: 77px;
-    position: absolute;
-    top: 50%;
-    margin-top: -38px;
-    left: 50%;
-    margin-left: -50px;
-    cursor: pointer;
+.production__play {
+  border: none;
+  background: none;
+  padding: 0;
+  background-image: url("../img/icon-play.svg");
+  background-size: cover;
+  width: 101px;
+  height: 77px;
+  position: absolute;
+  top: 50%;
+  margin-top: -38px;
+  left: 50%;
+  margin-left: -50px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
 

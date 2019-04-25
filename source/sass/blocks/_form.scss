@@ -85,8 +85,12 @@
     flex-direction: column;
   }
 
-  &--icon .form__input {
-    padding-bottom: 15px;
+  &--icon {
+    position: relative;
+
+    .form__input {
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -207,24 +211,27 @@ input:checked + .form__label {
   &:focus {
     border-color: $marker-color;
 
-    & + .form__icon-wrapper {
-      border-color: $marker-color;
-
-      .form__icon {
-        fill: $marker-color;
-      }
+    + .form__icon {
+      fill: $marker-color;
     }
   }
 }
 
-.form__icon-wrapper {
-  border-bottom: 2px solid #000000;
-  padding-top: 10px;
-  padding-right: 10px;
-}
-
 .form__icon {
   fill: $icon-color;
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  &--tel {
+    margin-top: -12px;
+    right: 8px;
+  }
+
+  &--email {
+    margin-top: -16px;
+    right: 4px;
+  }
 }
 
 .form__button {
@@ -389,9 +396,16 @@ input:checked + .form__label {
     }
   }
 
-  .form__icon-wrapper {
-    padding-top: 13px;
-    padding-right: 24px;
+  @media (max-width: $desktop-width - 1px) {
+    .form__icon {
+      &--tel {
+        right: 26px;
+      }
+
+      &--email {
+        right: 22px;
+      }
+    }
   }
 }
 
@@ -443,10 +457,6 @@ input:checked + .form__label {
     &--textarea {
       width: 700px;
     }
-  }
-
-  .form__icon-wrapper {
-    padding-right: 6px;
   }
 
   .form__footer {
