@@ -41,21 +41,21 @@
 
   &--next {
     @include block-shadow-left;
-    background-image: url("../img/icon-right-arrow.svg");
+    background-image: url("../img/bg-icons/right-arrow.svg");
   }
 
   &--prev {
-    background-image: url("../img/icon-left-arrow.svg");
+    background-image: url("../img/bg-icons/left-arrow.svg");
   }
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 78px 50px 133px;
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("../img/backgrounds/review@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
+      background-image: url("../img/backgrounds/review@2x.jpg");
       background-size: 350px auto;
     }
 
