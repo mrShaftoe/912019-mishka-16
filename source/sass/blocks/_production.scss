@@ -17,7 +17,7 @@
 
 .production__title {
   padding-left: 57px;
-  background-image: url("../img/icon-video.svg");
+  background-image: url("../img/video.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -30,13 +30,17 @@
 
 .production__video {
   position: relative;
+
+  &:hover + .production__content {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__play {
   border: none;
   background: none;
   padding: 0;
-  background-image: url("../img/icon-play.svg");
+  background-image: url("../img/play.svg");
   background-size: cover;
   width: 101px;
   height: 77px;
