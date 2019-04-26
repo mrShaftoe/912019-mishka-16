@@ -15,8 +15,8 @@ body {
   line-height: $default-line-height;
   color: $default-text-color;
   margin: 0;
-  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 img {
