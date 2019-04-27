@@ -2,41 +2,83 @@
   padding: 35px 30px 45px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px #c6c6c6;
+  background-color: #ffffff;
   width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 35%;
+  left: calc(50% - 160px);
 }
 
 .modal-order__title {
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 13px;
 }
 
 .modal-order__text {
   line-height: 30px;
   color: $paragraph-color;
   text-align: center;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.modal-order__form {
+  width: 260px;
 }
 
 .modal-order__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 47px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-order__choose-button {
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
+  padding: 12.5px 0;
+  border: 2px solid rgba($paragraph-color, 0.1);
+  cursor: pointer;
+  width: 30%;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border-color: rgba($paragraph-color, 0.3);
+  }
+}
+
+input:checked + .modal-order__choose-button {
+  border-color: $marker-color;
 }
 
 .modal-order__submit {
   color: #ffffff;
   background-color: $marker-color;
   border: none;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .modal-order {
     width: 566px;
+    left: calc(50% - 288px);
+    padding: 50px 0;
+  }
+
+  .modal-order__form {
+    width: 350px;
+  }
+
+  .modal-order__title {
+    font-size: 30px;
+    line-height: 57px;
   }
 }
