@@ -1,3 +1,4 @@
+//Меню для мобильного разрешения
 var toggle = document.querySelector(".site-menu__toggle");
 var menu = document.querySelectorAll(".site-menu");
 
@@ -19,6 +20,7 @@ toggle.addEventListener("click", function () {
   }
 });
 
+//Модальное окно
 var modalAppear = document.querySelectorAll(".modal-appear");
 var modalCover = document.querySelector(".modal-cover");
 var modalOrder = document.querySelector(".modal-order");
@@ -43,3 +45,26 @@ modalCover.addEventListener("click", function (evt) {
     modalCover.classList.remove("modal--show");
   }
 });
+
+//Я.Карты
+
+ymaps.ready(init);
+
+centerMap = [59.93863106, 30.32305450];
+zoomMap = 16;
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: centerMap,
+    zoom: zoomMap,
+    controls: []
+  });
+
+  var myPlacemark = new ymaps.Placemark(centerMap, {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/map-pin.svg',
+    iconImageSize: [67, 100],
+    iconImageOffset: [-30, -100]
+  });
+  myMap.geoObjects.add(myPlacemark);
+}
