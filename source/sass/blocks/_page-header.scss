@@ -45,6 +45,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
+    width: 91%;
   }
 
   .page-header__logo {
@@ -59,7 +60,7 @@
   .page-header__delivery {
     display: block;
     position: absolute;
-    right: 50px;
+    right: 6.5%;
     bottom: 0;
     z-index: 1;
   }
@@ -67,7 +68,7 @@
   .page-header__main-nav {
     order: 2;
     z-index: 1;
-    min-width: 334px;
+    min-width: 50%;
   }
 
   .page-header__user-nav {

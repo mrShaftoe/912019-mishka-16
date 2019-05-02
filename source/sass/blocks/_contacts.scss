@@ -14,7 +14,7 @@
   flex-direction: column;
 
   @media (max-width: $tablet-width - 1px) {
-    padding: 0 30px;
+    padding: 0 9%;
   }
 }
 
@@ -26,6 +26,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  align-content: center;
   font-size: 15px;
   line-height: 30px;
   color: $paragraph-color;
@@ -33,7 +34,6 @@
 }
 
 .contacts__item {
-  width: 260px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -76,8 +76,12 @@
   margin-bottom: 40px;
 }
 
+.contacts__button-wrapper {
+  padding: 0 9%;
+}
+
 .contacts__button {
-  width: 260px;
+  width: 100%;
   margin: 0 auto;
 }
 
