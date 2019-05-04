@@ -77,6 +77,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
   .page-header__logo {
     align-self: flex-start;
   }
@@ -92,5 +96,9 @@
     order: -1;
     font-size: 17px;
     min-width: 0;
+  }
+
+  .page-header__delivery {
+    right: 50px;
   }
 }

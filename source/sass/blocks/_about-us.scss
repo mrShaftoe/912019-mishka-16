@@ -12,6 +12,10 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-width - 1px) {
+    justify-content: space-between;
+  }
 }
 
 .about-us__item {
@@ -19,7 +23,7 @@
   font-weight: 700;
   line-height: 20px;
   padding-top: 53px;
-  min-width: 50%;
+  width: 260px;
   background-repeat: no-repeat;
   background-position: left top;
   margin-bottom: 30px;

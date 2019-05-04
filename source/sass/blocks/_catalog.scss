@@ -7,9 +7,9 @@
 
 .catalog__list {
   @include list-reset;
-
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .catalog__item {
@@ -39,6 +39,9 @@
   .catalog__list {
     margin-right: -51px;
     padding-top: 127px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .catalog__item {

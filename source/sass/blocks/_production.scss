@@ -1,6 +1,7 @@
 .production {
   @media (max-width: $tablet-width - 1px) {
     padding: 0 30px 59px;
+    width: 320px;
   }
   display: flex;
   flex-direction: column;
@@ -90,7 +91,7 @@
   }
 
   .production__content {
-    padding: 0 42px 45px;
+    padding: 0 40px 45px;
   }
 
   .production__text {
@@ -103,11 +104,11 @@
     order: -1;
     border: 1px solid $border-color;
     border-bottom: none;
+    text-align: center;
   }
 
   .production__picture {
     width: 668px;
-    height: 455px;
   }
 }
 

@@ -1,5 +1,5 @@
-.item__card {
-  width: 100%;
+.item-card {
+  width: 260px;
 }
 
 .item-card__picture {
@@ -92,7 +92,7 @@
 @media (min-width: $tablet-width) {
   .item-card {
     display: flex;
-    width: 668px;
+    width: 100%;
   }
 
   .item-card__picture {
