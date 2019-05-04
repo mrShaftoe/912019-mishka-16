@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
   position: relative;
 }
 
@@ -83,6 +82,7 @@
 
   .production__header {
     padding: 35px 40px 29px;
+    margin-top: 1px;
   }
 
   .production__title {
@@ -105,10 +105,11 @@
     border: 1px solid $border-color;
     border-bottom: none;
     text-align: center;
+    margin-bottom: 0;
   }
 
   .production__picture {
-    width: 668px;
+    width: 100%;
   }
 }
 
