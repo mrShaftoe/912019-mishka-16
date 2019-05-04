@@ -47,26 +47,24 @@ modalCover.addEventListener("click", function (evt) {
 });
 
 //Я.Карты
-var page = window.location.pathname.split("/").pop();
-  if (page === "index.html") {
-  ymaps.ready(init);
 
-  centerMap = [59.93863106, 30.32305450];
-  zoomMap = 16;
+ymaps.ready(init);
 
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: centerMap,
-      zoom: zoomMap,
-      controls: []
-    });
+centerMap = [59.93863106, 30.32305450];
+zoomMap = 16;
 
-    var myPlacemark = new ymaps.Placemark(centerMap, {}, {
-      iconLayout: 'default#image',
-      iconImageHref: '../img/map-pin.svg',
-      iconImageSize: [67, 100],
-      iconImageOffset: [-30, -100]
-    });
-    myMap.geoObjects.add(myPlacemark);
-  }
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: centerMap,
+    zoom: zoomMap,
+    controls: []
+  });
+
+  var myPlacemark = new ymaps.Placemark(centerMap, {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/map-pin.svg',
+    iconImageSize: [67, 100],
+    iconImageOffset: [-30, -100]
+  });
+  myMap.geoObjects.add(myPlacemark);
 }
