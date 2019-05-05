@@ -15,6 +15,7 @@
 .week-good__header {
   width: 260px;
   margin-bottom: 20px;
+  align-self: flex-start;
 }
 
 .week-good__title {
@@ -27,6 +28,10 @@
   line-height: 20px;
   color: $marker-color;
   text-transform: uppercase;
+}
+
+.week-good__content {
+  width: 100%;
 }
 
 .week-good__text {
@@ -77,7 +82,7 @@
   .week-good {
     padding-top: 47px;
     padding-bottom: 70px;
-    margin-bottom: 0;
+    margin-bottom: 49px;
 
     @include zigzag-border(15px);
   }
@@ -96,6 +101,7 @@
     justify-content: space-between;
     position: relative;
     min-height: 404px;
+    width: 100%;
   }
 
   .week-good__title {
@@ -163,6 +169,7 @@
   .week-good__content {
     flex-direction: column;
     margin-left: 175px;
+    width: auto;
   }
 
   .week-good__description {
