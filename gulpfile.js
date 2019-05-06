@@ -28,6 +28,10 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(rename({
+      suffix: ".min"
+    }))
     .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -84,7 +88,11 @@ gulp.task("copy", function () {
 
 gulp.task("js", function () {
   return gulp.src("source/js/**/*.js").
+    pipe(gulp.dest("build/js")).
     pipe(uglify()).
+    pipe(rename({
+      suffix: ".min"
+    })).
     pipe(gulp.dest("build/js"));
 });
 
