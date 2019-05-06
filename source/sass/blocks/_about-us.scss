@@ -1,27 +1,29 @@
 .about-us {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 9%;
 }
 
 .about-us__header {
-  width: 260px;
   margin-bottom: 32px;
 }
 
 .about-us__list {
   @include list-reset;
-  width: 260px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-width - 1px) {
+    justify-content: space-between;
+  }
 }
 
 .about-us__item {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  width: 260px;
   padding-top: 53px;
+  width: 260px;
   background-repeat: no-repeat;
   background-position: left top;
   margin-bottom: 30px;
@@ -64,7 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-top: 50px;
+    padding: 0 6.5% 50px;
     margin-bottom: 27px;
   }
 
@@ -75,19 +77,22 @@
 
   .about-us__list {
     width: auto;
+    justify-content: space-between;
   }
 
   .about-us__item {
-    width: 334px;
+    width: 50%;
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 57px;
+    min-width: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
     padding-top: 58px;
+    padding-left: 225px;
     margin-bottom: 35px;
   }
 

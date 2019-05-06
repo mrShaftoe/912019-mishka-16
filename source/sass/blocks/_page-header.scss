@@ -45,10 +45,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
+    width: 91%;
   }
 
   .page-header__logo {
     padding: 0;
+    margin-right: auto;
   }
 
   .page-header__logo-image {
@@ -59,7 +61,7 @@
   .page-header__delivery {
     display: block;
     position: absolute;
-    right: 50px;
+    right: 6.5%;
     bottom: 0;
     z-index: 1;
   }
@@ -67,7 +69,7 @@
   .page-header__main-nav {
     order: 2;
     z-index: 1;
-    min-width: 334px;
+    min-width: 50%;
   }
 
   .page-header__user-nav {
@@ -76,8 +78,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
   .page-header__logo {
     align-self: flex-start;
+    margin: 0;
   }
 
   .page-header__logo-image {
@@ -91,5 +98,9 @@
     order: -1;
     font-size: 17px;
     min-width: 0;
+  }
+
+  .page-header__delivery {
+    right: 50px;
   }
 }

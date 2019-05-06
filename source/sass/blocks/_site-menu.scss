@@ -7,7 +7,6 @@
 
 .site-menu__item {
   @include block-shadow-top;
-  padding-left: 32px;
 
   &--secondary {
     display: none;
@@ -23,6 +22,7 @@
   padding-bottom: 30px;
   padding-left: 46px;
   vertical-align: bottom;
+  margin: 0 auto;
 
   &--icon {
     padding-left: 0;
