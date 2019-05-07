@@ -122,9 +122,9 @@
         </div>
 
         <div class="form__fieldset form__fieldset--bg form__fieldset--solid container">
-          <div class="form__legend form__legend--one-field">Тел</div>
+          <label class="form__legend form__legend--one-field" for="tel">Тел</label>
           <div class="form__field form__field--icon">
-            <input type="tel" class="form__input" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input type="tel" class="form__input" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             <svg class="form__icon form__icon--tel" aria-hidden="true" role="presentation" focusable="false" width="25" height="24">
               <use xlink:href="#icon-phone"></use>
             </svg>
@@ -132,9 +132,9 @@
         </div>
 
         <div class="form__fieldset form__fieldset--bg container">
-          <div class="form__legend form__legend--one-field">E-mail</div>
+          <label class="form__legend form__legend--one-field" for="email">E-mail</label>
           <div class="form__field form__field--icon">
-            <input type="email" class="form__input" name="email" placeholder="Ваш Email*">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Ваш Email*">
             <svg class="form__icon form__icon--email" aria-hidden="true" role="presentation" focusable="false" width="32px" height="32px">
               <use xlink:href="#icon-mail"></use>
             </svg>
@@ -142,9 +142,9 @@
         </div>
 
         <div class="form__fieldset form__fieldset--textarea container">
-            <div class="form__legend">Доп</div>
+            <label class="form__legend" for="dop">Доп</label>
             <div class="form__field">
-              <textarea rows="6" class="form__input form__input--textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea rows="6" class="form__input form__input--textarea" id="dop" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
         </div>
 
@@ -206,7 +206,7 @@
         </section>
       </div>
     </footer>
-
+    <script src="js/picturefill.min.js" async></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

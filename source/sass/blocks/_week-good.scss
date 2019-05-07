@@ -14,7 +14,7 @@
 
 .week-good__header {
   width: 260px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   align-self: flex-start;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .week-good__picture {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   vertical-align: bottom;
   width: 100%;
 }
@@ -155,6 +155,7 @@
   .week-good {
     padding-top: 98px;
     padding-bottom: 97px;
+    margin-bottom: 0;
 
     @include zigzag-border(23px);
   }
