@@ -19,6 +19,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .review__author-name {
+    @media (max-width: $desktop-width - 1px) {
+      font-size: 18px;
+    }
+  }
+
   .review__text {
     margin-bottom: 59px;
     width: 644px;

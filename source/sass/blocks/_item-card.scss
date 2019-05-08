@@ -6,12 +6,11 @@
   vertical-align: bottom;
 }
 
-.item-card__picture-link:hover + .item-card__content,
-.item-card__picture-link:focus + .item-card__content {
+.item-card:hover .item-card__content {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.item-card__picture-link:active + .item-card__content {
+.item-card:active .item-card__content {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
