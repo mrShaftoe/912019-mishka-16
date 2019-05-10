@@ -55,7 +55,7 @@
   }
 }
 
-input:checked + .modal-order__choose-button {
+.modal-order__hidden-input:checked + .modal-order__choose-button {
   border-color: $marker-color;
 }
 
