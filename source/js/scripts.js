@@ -61,8 +61,8 @@ function init() {
   });
 
   var myPlacemark = new ymaps.Placemark(centerMap, {}, {
-    iconLayout: 'default#image',
-    iconImageHref: '../img/map-pin.svg',
+    iconLayout: "default#image",
+    iconImageHref: "../img/map-pin.svg",
     iconImageSize: [67, 100],
     iconImageOffset: [-30, -100]
   });

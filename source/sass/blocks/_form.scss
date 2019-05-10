@@ -143,8 +143,7 @@
   }
 
 
-  &:hover,
-  &:focus {
+  &:hover {
     &::before {
       border-color: $marker-color;
     }
@@ -155,6 +154,10 @@
       border-color: rgba($paragraph-color, 0.3);
     }
   }
+}
+
+.form__hidden-input:focus + .form__label::before {
+  border-color: $marker-color;
 }
 
 .form__hidden-input:checked + .form__label {

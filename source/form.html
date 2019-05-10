@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -87,7 +89,7 @@
           <div class="form__legend">ЦВет</div>
           <div class="form__fields  form__fields--choice form__fields--colors">
             <input type="checkbox" id="color-1" class="visually-hidden form__hidden-input" name="color" value="color-1" checked>
-            <label for="color-1" class="form__label form__label--checkbox form__hidden-input">Белый</label>
+            <label for="color-1" class="form__label form__label--checkbox">Белый</label>
             <input type="checkbox" id="color-2" class="visually-hidden form__hidden-input" name="color" value="color-2" checked>
             <label for="color-2" class="form__label form__label--checkbox">Серый</label>
             <input type="checkbox" id="color-3" class="visually-hidden form__hidden-input" name="color" value="color-3">
@@ -95,7 +97,7 @@
             <input type="checkbox" id="color-4" class="visually-hidden form__hidden-input" name="color" value="color-4">
             <label for="color-4" class="form__label form__label--checkbox">Черный</label>
             <input type="checkbox" id="color-5" class="visually-hidden form__hidden-input" name="color" value="color-5">
-            <label for="color-5" class="form__label form__label--checkbox form__hidden-input">Розовый</label>
+            <label for="color-5" class="form__label form__label--checkbox">Розовый</label>
             <input type="checkbox" id="color-6" class="visually-hidden form__hidden-input" name="color" value="color-6">
             <label for="color-6" class="form__label form__label--checkbox">Оранжевый</label>
           </div>
@@ -135,7 +137,7 @@
           <label class="form__legend form__legend--one-field" for="email">E-mail</label>
           <div class="form__field form__field--icon">
             <input type="email" class="form__input" name="email" id="email" placeholder="Ваш Email*">
-            <svg class="form__icon form__icon--email" aria-hidden="true" role="presentation" focusable="false" width="32px" height="32px">
+            <svg class="form__icon form__icon--email" aria-hidden="true" role="presentation" focusable="false" width="32" height="32">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </div>
@@ -159,7 +161,7 @@
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
           <a href="index.html" aria-label="Интернет-магазин Мишка. Переход на главную страницу">
-            <svg width="101.615px" height="34.056px">
+            <svg width="101.615" height="34.056">
               <use xlink:href="#logo-footer"></use>
             </svg>
           </a>
